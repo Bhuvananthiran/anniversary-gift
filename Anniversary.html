@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffebf0;
+            color: #d63384;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: fadeIn 2s ease;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 0;
+            color: #e06b8d;
+        }
+        .message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #6f42c1;
+            animation: fadeIn 2s ease;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #d63384;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #c2185b;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Anniversary!</h1>
+    <h2>To my beloved</h2>
+    <p>Click the button below for a special surprise</p>
+
+    <!-- Button to reveal the surprise message -->
+    <button onclick="showMessage()">Reveal Surprise</button>
+
+    <!-- Hidden message -->
+    <div class="message" id="hiddenMessage">
+        <p>💖 I love you more than words can say! Here's to more beautiful years together! 💖</p>
+        <p>Happy Anniversary, my love!</p>
+    </div>
+
+    <!-- Background music -->
+    <audio autoplay loop>
+        <source src="https://example.com/your-song.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        function showMessage() {
+            document.getElementById("hiddenMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
